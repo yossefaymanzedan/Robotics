@@ -1,0 +1,407 @@
+/* Editing responsive design */
+/* xs screens */
+@media only screen and (max-width: 575.98px) {
+    /* Editing the size of images of the carousel */
+    .carousel-item img {
+        min-height: 250px;
+        max-height: 250px;
+        }
+
+}
+/* s screens */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Editing the size of images of the carousel */
+    .carousel-item img {
+        min-height: 350px;
+        max-height: 350px;
+        }
+
+}
+/* medium screens */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Editing the size of images of the carousel */
+    .carousel-item img {
+        min-height: 450px;
+        max-height: 450px;
+        }
+
+}
+/* large screens */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Editing the size of images of the carousel */
+    .carousel-item img {
+        min-height: 550px;
+        max-height: 550px;
+        }
+
+}
+/* xl screens */
+@media (min-width: 1200px) {
+    /* Editing the size of images of the carousel */
+    .carousel-item img {
+        min-height: 650px;
+        max-height: 650px;
+        }
+
+}
+/* The item of the carousel */
+.carousel-item {
+    /* Adding position: relative; to adjust the position of carousel-text
+    relative to carousel-item */
+position: relative;
+}
+/* Editing position of text of carousel item */
+.carousel-text {
+position: absolute;
+width: 100%;
+bottom: 90%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+/* Adding the animation for the button */
+.carousel-text button {
+box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.692);
+animation: button 5s infinite;
+}
+/* The animation of button of carousel */
+@keyframes button {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(25px);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
+    75% {
+        transform: translateY(25px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+/* Letter spacing of the carousel text */
+.carousel_content_inner div {
+
+letter-spacing: 10px;
+}
+/* Logo in navbar */
+.navbar-brand img {
+    max-height: 70px;
+}
+/* Dropdown to work on hover */
+.dropdown:hover>.dropdown-menu{
+    display: block;
+}
+/* Changing style of active item of navbar */
+.nav-item .active {
+    background-color: rgba(228, 228, 228, 0.177);
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(255 , 121, 24, 1);
+}
+/* Changing the controllers of the carousel */
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' stroke='black'  viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+
+  height: 150px;
+  width: 110px;
+
+ }
+
+.carousel-control-prev-icon {
+    border-radius: 2px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' stroke='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    height: 150px;
+    width: 110px;
+
+}
+/* Making the row col-3 in discover section relative
+to add ::before */
+.discover .row .col-3 {
+
+position: relative;
+overflow: hidden;
+
+}
+.discover .row .col-3 img {
+    transition: all .4s;
+}
+/* To animate the background */
+.discover .row .col-3:nth-child(1) .content {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+ background-color: rgba(255, 120, 24, 0.839);
+ transition: all 0.4s;
+ opacity: 0;
+ color: white;
+
+
+}
+/* To adjust position of the text */
+.discover .row .col-3:nth-child(1) .content .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.discover .row .col-3:nth-child(1):hover .content {
+    height: 100%;
+    opacity: 1;
+    transition: all 0.2s;
+}
+.discover .row .col-3:nth-child(1):hover img {
+transform: scale(1.5);
+transition: all .4s;
+}
+/* To animate the background */
+.discover .row .col-3:nth-child(2) .content {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+ background-color: #442668b8;
+ transition: all 0.4s;
+ opacity: 0;
+ color: white;
+
+
+}
+/* To adjust position of the text */
+.discover .row .col-3:nth-child(2) .content .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.discover .row .col-3:nth-child(2):hover .content {
+    height: 100%;
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+
+.discover .row .col-3:nth-child(2):hover img {
+    transform: scale(1.5);
+    transition: all .4s;
+}
+/* To animate the background */
+.discover .row .col-3:nth-child(3) .content {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+ background-color: rgba(255, 0, 0, 0.468);
+ transition: all 0.4s;
+ opacity: 0;
+ color: white;
+
+
+}
+/* To adjust position of the text */
+.discover .row .col-3:nth-child(3) .content .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.discover .row .col-3:nth-child(3):hover .content {
+    height: 100%;
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+
+.discover .row .col-3:nth-child(3):hover img {
+    transform: scale(1.5);
+    transition: all .4s;
+    }
+
+/* To animate the background */
+.discover .row .col-3:nth-child(4) .content {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+ background-color: rgba(255, 251, 0, 0.468);
+ transition: all 0.4s;
+ opacity: 0;
+ color: white;
+
+
+}
+/* To adjust position of the text */
+.discover .row .col-3:nth-child(4) .content .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.discover .row .col-3:nth-child(4):hover .content {
+    height: 100%;
+    opacity: 1;
+    transition: all 0.2s;
+}
+.discover .row .col-3:nth-child(4):hover img {
+    transform: scale(1.5);
+    transition: all .4s;
+}
+
+
+/* Adding for invent section */
+
+.invent .row .col-md-4 {
+
+    position: relative;
+    overflow: hidden;
+
+}
+.invent .row .col-md-4 img {
+    transition: all .4s;
+}
+/* To animate the background */
+.invent .row .col-md-4:nth-child(1) .content {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+ background-color: rgba(255, 120, 24, 0.839);
+ transition: all 0.4s;
+ opacity: 0;
+ color: white;
+
+
+}
+/* To adjust position of the text */
+.invent .row .col-md-4:nth-child(1) .content .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.invent .row .col-md-4:nth-child(1):hover .content {
+    height: 100%;
+    opacity: 1;
+    transition: all 0.2s;
+}
+.invent .row .col-md-4:nth-child(1):hover img {
+    transform: scale(1.5);
+    transition: all .4s;
+}
+
+
+
+
+/* To animate the background */
+.invent .row .col-md-4:nth-child(2) .content {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+ background-color: rgba(255, 251, 0, 0.468);
+ transition: all 0.4s;
+ opacity: 0;
+ color: white;
+
+
+}
+/* To adjust position of the text */
+.invent .row .col-md-4:nth-child(2) .content .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.invent .row .col-md-4:nth-child(2):hover .content {
+    height: 100%;
+    opacity: 1;
+    transition: all 0.2s;
+}
+.invent .row .col-md-4:nth-child(2):hover img {
+    transform: scale(1.5);
+    transition: all .4s;
+}
+
+
+
+
+/* To animate the background */
+.invent .row .col-md-4:nth-child(3) .content {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+ background-color: rgba(255, 0, 0, 0.468);
+ transition: all 0.4s;
+ opacity: 0;
+ color: white;
+
+
+}
+/* To adjust position of the text */
+.invent .row .col-md-4:nth-child(3) .content .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.invent .row .col-md-4:nth-child(3):hover .content {
+    height: 100%;
+    opacity: 1;
+    transition: all 0.2s;
+}
+.invent .row .col-md-4:nth-child(3):hover img {
+    transform: scale(1.5);
+    transition: all .4s;
+}
+
+
+
+/* Video section */
+.video-container
+{
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+video {
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    height: 80vh;
+    width: 100vw;
+}
+
+
+/* Cards section */
+.cards .card {
+    transition: all .15s;
+
+}
+.cards .card:hover {
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.404);
+    transition: all .15s;
+}
